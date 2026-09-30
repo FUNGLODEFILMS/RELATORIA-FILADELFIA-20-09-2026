@@ -14,6 +14,23 @@
 
 footer .preparation-credit strong{font-family:var(--sans);font-size:13px;font-weight:700;color:var(--navy)}
 
+
+/* Justified prose on wide screens and paper; left aligned on narrow screens. */
+@media screen and (min-width: 761px), print {
+  #resumen > p:not(.section-intro),
+  #propuestas .proposal p,
+  #participantes > p,
+  #participantes .participant-list li,
+  #participantes .note p,
+  #minuta > p,
+  .transcript-body .utterance {
+    text-align: justify;
+    text-align-last: left;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+}
 </style></head><body id="inicio"><a class="skip-link" href="#contenido">Saltar al contenido</a>
 <header class="site-header"><div class="header-inner"><a class="wordmark" href="#inicio">RELATORÍA <span>FILADELFIA · 2026</span></a><nav aria-label="Navegación principal"><a href="#resumen">Resumen</a><a href="#transcripcion">Transcripción</a><button class="print-button" type="button" hidden>Imprimir / PDF</button></nav></div></header>
 <main id="contenido"><div class="hero"><div class="hero-inner"><p class="eyebrow">Cámara de Comercio Dominicana de Filadelfia</p><div class="hero-grid"><div><p class="document-type">MEMORIA DEL ENCUENTRO</p><h1>Conversatorio<br>empresarial <em>en Filadelfia</em></h1><p class="hero-subtitle">Con el Dr. Leonel Fernández</p><p class="hero-description">Encuentro con la diáspora empresarial dominicana</p><div class="hero-actions"><a class="button" href="#resumen">Leer la relatoría</a><a class="hero-link" href="#transcripcion">Consultar transcripción</a></div></div><aside class="date-panel" aria-label="Fecha del documento"><span class="date-day">20</span><span class="date-month">SEPTIEMBRE</span><span class="date-year">2026</span><span class="date-city">Filadelfia</span></aside></div><div class="hero-foot"><span>RESUMEN · MINUTA · TRANSCRIPCIÓN</span><span>Duración aproximada: 1 h 14 min</span></div></div></div>
